@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
+import {StyleSheet, View, Text, TouchableOpacity, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icon1 from 'react-native-vector-icons/FontAwesome';
 import {TextInput} from 'react-native-gesture-handler';
@@ -7,10 +7,11 @@ import {TextInput} from 'react-native-gesture-handler';
 const LoginScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <View style={styles.logoContainer}>
-        <Text style={styles.logoText}>shi</Text>
-        <Icon name="fingerprint" size={80} color="#2B5DAA" />
-      </View>
+      <Image
+        source={require('../assets/logo.png')}
+        style={styles.logo}
+        resizeMode="contain"
+      />
       <Text style={styles.welcomeText}>Welcome Back</Text>
       <Text style={styles.subText}>Please Log in to continue</Text>
       <View style={styles.inputContainer}>
@@ -37,7 +38,7 @@ const LoginScreen = ({navigation}) => {
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.loginButton}
-        onPress={() => navigation.replace('Welcome')}>
+        onPress={() => navigation.replace('SuccessfulLogin')}>
         <Text style={styles.loginButtonText}>Log In</Text>
       </TouchableOpacity>
       <View style={styles.or}>
@@ -68,15 +69,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 20,
   },
-  logoContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 30,
-  },
-  logoText: {
-    fontSize: 100,
-    color: '#2B5DAA',
-    fontWeight: 'bold',
+  logo: {
+    width: 250,
+    height: 250,
+    marginBottom: -20,
   },
   welcomeText: {
     fontSize: 27,

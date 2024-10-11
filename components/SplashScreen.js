@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {View, Text, StyleSheet, Image} from 'react-native';
 
 const SplashScreen = ({navigation}) => {
   useEffect(() => {
@@ -10,10 +9,11 @@ const SplashScreen = ({navigation}) => {
   }, [navigation]);
   return (
     <View style={styles.container}>
-      <View style={styles.logoContainer}>
-        <Text style={styles.logoText}>shi</Text>
-        <Icon name="fingerprint" size={80} color="#FFE164" />
-      </View>
+      <Image
+        source={require('../assets/splash-logo.png')}
+        style={styles.logo}
+        resizeMode="contain"
+      />
       <Text style={styles.footerText}>
         Powered by <Text style={styles.codidText}>{'{codid;}'}</Text>
       </Text>
@@ -28,15 +28,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  logoContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    height: '80%',
-  },
-  logoText: {
-    fontSize: 100,
-    color: '#FFE164',
-    fontWeight: 'bold',
+  logo: {
+    width: 240,
+    height: '90%',
   },
   footerText: {
     fontSize: 16,

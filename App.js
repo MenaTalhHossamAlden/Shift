@@ -3,7 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import SplashScreen from './components/SplashScreen';
 import LoginScreen from './components/LoginScreen';
-import WelcomeScreen from './components/WelcomeScreen';
+import SuccessfulLogin from './components/SuccessfulLogin';
 
 const Stack = createStackNavigator();
 
@@ -15,7 +15,7 @@ export default function App() {
         screenOptions={{headerShown: false}}>
         <Stack.Screen name="Splash" component={SplashScreen} />
         <Stack.Screen name="Home" component={LoginScreen} />
-        <Stack.Screen name="Welcome" component={WelcomeScreen} />
+        <Stack.Screen name="SuccessfulLogin" component={SuccessfulLogin} />
       </Stack.Navigator>
     </NavigationContainer>
   );

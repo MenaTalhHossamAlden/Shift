@@ -6,11 +6,15 @@
 
 - Splash Screen
 
- ![alt text](image.png)
+![alt text]({7B0BC239-5ACF-4F66-812F-39A3CAAC9F09}.png)
 
 - Login Screen
 
-![alt text](image-2.png)
+![alt text](image-4.png)
+
+- Successful Login
+
+![alt text](image-5.png)
 
 ## <img  align= center width=50px height=50px src="https://c.tenor.com/HgX89Yku5V4AAAAi/to-the-moon.gif"> Get Started <a id = "started"></a>
 
