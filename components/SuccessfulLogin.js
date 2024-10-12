@@ -3,7 +3,7 @@ import {View, Text, TouchableOpacity, StyleSheet, Image} from 'react-native';
 
 const SuccessfulLogin = ({navigation}) => {
   const handleGoHome = () => {
-    navigation.navigate('Home');
+    navigation.navigate('Project');
   };
   return (
     <View style={styles.container}>

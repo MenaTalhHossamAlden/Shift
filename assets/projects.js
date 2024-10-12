@@ -1,0 +1,58 @@
+const projects = [
+  {
+    id: 1,
+    name: 'Innovative HR Solutions',
+    startDate: '01/01/2021',
+    endDate: '01/02/2021',
+    progress: 0.5,
+    totalTasks: 48,
+    completedTasks: 24,
+    members: [
+      {id: 1, avatar: require('./avatar-1.jpg')},
+      {id: 2, avatar: require('./avatar-2.jpg')},
+      {id: 3, avatar: require('./avatar-3.jpg')},
+      {id: 4, avatar: require('./avatar-1.jpg')},
+      {id: 5, avatar: require('./avatar-1.jpg')},
+      {id: 6, avatar: require('./avatar-1.jpg')},
+      {id: 7, avatar: require('./avatar-1.jpg')},
+    ],
+  },
+  {
+    id: 2,
+    name: 'Elevating Experience',
+    startDate: '01/01/2021',
+    endDate: '01/02/2021',
+    progress: 0.5,
+    totalTasks: 48,
+    completedTasks: 24,
+    members: [
+      {id: 1, avatar: require('./avatar-1.jpg')},
+      {id: 2, avatar: require('./avatar-2.jpg')},
+      {id: 3, avatar: require('./avatar-3.jpg')},
+      {id: 4, avatar: require('./avatar-1.jpg')},
+      {id: 5, avatar: require('./avatar-1.jpg')},
+      {id: 6, avatar: require('./avatar-1.jpg')},
+      {id: 7, avatar: require('./avatar-1.jpg')},
+    ],
+  },
+  {
+    id: 3,
+    name: 'Innovative HR Solutions',
+    startDate: '01/01/2021',
+    endDate: '01/02/2021',
+    progress: 0.5,
+    totalTasks: 48,
+    completedTasks: 24,
+    members: [
+      {id: 1, avatar: require('./avatar-1.jpg')},
+      {id: 2, avatar: require('./avatar-2.jpg')},
+      {id: 3, avatar: require('./avatar-3.jpg')},
+      {id: 4, avatar: require('./avatar-1.jpg')},
+      {id: 5, avatar: require('./avatar-1.jpg')},
+      {id: 6, avatar: require('./avatar-1.jpg')},
+      {id: 7, avatar: require('./avatar-1.jpg')},
+    ],
+  },
+];
+
+export default projects;
