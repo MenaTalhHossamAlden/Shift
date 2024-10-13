@@ -5,7 +5,7 @@ import projects from '../assets/projects';
 import renderProject from './renderProject';
 import Icon from 'react-native-vector-icons/Foundation';
 
-const ProjectScreen = () => {
+const ProjectScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.details}>
@@ -18,7 +18,9 @@ const ProjectScreen = () => {
           renderItem={renderProject}
           keyExtractor={item => item.id.toString()}
         />
-        <TouchableOpacity style={styles.addButton}>
+        <TouchableOpacity
+          style={styles.addButton}
+          onPress={() => navigation.navigate('AddProject')}>
           <Text style={styles.addButtonText}>Add New Project</Text>
         </TouchableOpacity>
       </View>
