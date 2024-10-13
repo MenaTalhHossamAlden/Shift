@@ -4,3 +4,21 @@ extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autoli
 rootProject.name = 'project'
 include ':app'
 includeBuild('../node_modules/@react-native/gradle-plugin')
+dependencyResolutionManagement {
+  repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+  repositories {
+    google()
+    mavenCentral()
+    jcenter()
+    maven {
+        url 'https://api.mapbox.com/downloads/v2/releases/maven'
+        authentication {
+            basic(BasicAuthentication)
+        }
+        credentials {
+            username = "mapbox"
+            password = 'sk.eyJ1IjoibWVuYXRhbGgiLCJhIjoiY20yN2lkd3JmMWhhejJxcXc5ZnQ1b2Q0aiJ9.Pz2eLjrJFwxjFgCZ9rpn3w'
+        }
+      }
+    }
+  }
