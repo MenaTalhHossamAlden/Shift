@@ -20,7 +20,7 @@ MapboxGL.setAccessToken(
   'sk.eyJ1IjoibWVuYXRhbGgiLCJhIjoiY20yN2lkd3JmMWhhejJxcXc5ZnQ1b2Q0aiJ9.Pz2eLjrJFwxjFgCZ9rpn3w',
 );
 
-const AddProjectScreen = () => {
+const AddProjectScreen = ({navigation}) => {
   const [projectName, setProjectName] = useState('');
   const [projectCode, setProjectCode] = useState('');
   const [missionDescription, setMissionDescription] = useState('');
@@ -235,7 +235,9 @@ const AddProjectScreen = () => {
         />
         <Text>Share With Everyone</Text>
       </View>
-      <TouchableOpacity style={styles.locationButton}>
+      <TouchableOpacity
+        style={styles.locationButton}
+        onPress={() => navigation.navigate('ProjectDetails')}>
         <Text style={styles.locationText}>Submit</Text>
       </TouchableOpacity>
       <Footer />

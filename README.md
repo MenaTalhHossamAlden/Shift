@@ -24,6 +24,10 @@
 
 ![alt text](image-7.png) ![alt text](image-8.png)
 
+- Project Details
+
+![alt text](image-9.png) ![alt text](image-10.png)
+
 ## <img  align= center width=50px height=50px src="https://c.tenor.com/HgX89Yku5V4AAAAi/to-the-moon.gif"> Get Started <a id = "started"></a>
 
 <ol>

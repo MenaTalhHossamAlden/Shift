@@ -6,6 +6,7 @@ import LoginScreen from './components/LoginScreen';
 import SuccessfulLogin from './components/SuccessfulLogin';
 import ProjectScreen from './components/ProjectsScreen';
 import AddProjectScreen from './components/AddProjectScreen';
+import ProjectDetailsScreen from './components/ProjectDetailsScreen';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +21,7 @@ export default function App() {
         <Stack.Screen name="SuccessfulLogin" component={SuccessfulLogin} />
         <Stack.Screen name="Project" component={ProjectScreen} />
         <Stack.Screen name="AddProject" component={AddProjectScreen} />
+        <Stack.Screen name="ProjectDetails" component={ProjectDetailsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
